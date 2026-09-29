@@ -1,3 +1,6 @@
+from unittest import case
+
+
 def sumar(primer_numero, segundo_numero):
     pass
 
@@ -28,5 +31,19 @@ while True:
     print("6. Salir")
 
     opcion = input("Elige una opción: ")
-
     # Completa aquí usando match/case.
+
+    match opcion:
+
+        case 1: 
+            print("Estas en Suma")
+        case 2:
+            print("E    stas en Resta")
+        case 3:
+         print("Estas en una multiplicación")
+        case 4:
+            print("Estas en una divisón")
+        case 5:
+            print("Estas verificando si este numero es par")
+        case 6:
+            print("Hasta luego")
